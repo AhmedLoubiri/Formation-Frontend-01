@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ahmed Loubiri — Frontend Developer Portfolio"
+    />
+    <title>Ahmed Loubiri — SWE</title>
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="Go to home">
+          <img src="./assets/logo.svg" alt="JD logo" width="28" height="28" />
+          <span class="brand-text">Ahmed Loubiri</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-label="Open menu"
+          >
+            <span class="bar"></span><span class="bar"></span
+            ><span class="bar"></span>
+          </button>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#experience">Experience</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            id="theme-toggle"
+            class="icon-btn"
+            aria-label="Toggle theme"
+            title="Toggle theme"
+          >
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21.64 13A9 9 0 0 1 11 2.36 9 9 0 1 0 21.64 13z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="section hero">
+        <div class="container hero-grid">
+          <div class="hero-text reveal">
+            <p class="eyebrow">Frontend Developer</p>
+            <h1>Hi, I'm <span class="accent">Ahmed Loubiri</span></h1>
+            <p class="lead">
+              I craft clean, accessible, and performant web experiences. This
+              portfolio is filled with placeholder content — swap it with your
+              own later.
+            </p>
+            <div class="cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Contact Me</a>
+            </div>
+            <div class="socials">
+              <a href="#" aria-label="GitHub (placeholder)" title="GitHub">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.21.09 1.84 1.25 1.84 1.25 1.07 1.84 2.82 1.31 3.51 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.48-1.34-5.48-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.64.24 2.86.12 3.16.77.84 1.24 1.9 1.24 3.22 0 4.62-2.81 5.65-5.49 5.95.43.37.81 1.09.81 2.2v3.26c0 .32.21.69.83.57A12 12 0 0 0 12 .5z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn (placeholder)" title="LinkedIn">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.64h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.09V21h-4v-5.27c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.38-2.03 2.8V21H9z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter/X (placeholder)" title="Twitter">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M20.98 3H17.8l-4.6 6.66L8.12 3H2l7.52 10.82L2.26 21h3.17l4.95-7.16L15.97 21H22l-7.76-11.11L20.98 3z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual reveal" aria-hidden="true">
+            <img
+              src="./assets/avatar.svg"
+              alt="Avatar placeholder"
+              class="avatar"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container grid-2">
+          <div class="reveal">
+            <h2>About Me</h2>
+            <p>
+              I'm a passionate frontend developer focused on building delightful
+              user interfaces. I enjoy working with semantic HTML, modern CSS,
+              and JavaScript to create accessible, responsive, and
+              high-performing web apps.
+            </p>
+            <ul class="checks">
+              <li>Pixel-perfect UI and UX</li>
+              <li>Performance minded and accessible</li>
+              <li>Responsive and mobile-first</li>
+            </ul>
+            <div class="facts">
+              <div>
+                <span class="stat">5+</span
+                ><span class="label">Years Coding</span>
+              </div>
+              <div>
+                <span class="stat">25+</span><span class="label">Projects</span>
+              </div>
+              <div>
+                <span class="stat">10</span
+                ><span class="label">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal">
+            <h3>Quick Info</h3>
+            <dl class="info">
+              <div>
+                <dt>Location</dt>
+                <dd>Tunis, Tunisia (placeholder)</dd>
+              </div>
+              <div>
+                <dt>Speciality</dt>
+                <dd>Frontend Development</dd>
+              </div>
+              <div>
+                <dt>Interests</dt>
+                <dd>UI Design, Accessibility, Performance</dd>
+              </div>
+              <div>
+                <dt>Availability</dt>
+                <dd>Open to opportunities</dd>
+              </div>
+            </dl>
+            <a class="btn block" href="#contact">Let's work together</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section alt">
+        <div class="container">
+          <h2 class="center">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill reveal">
+              <div class="skill-head">
+                <span>HTML</span><span>Advanced</span>
+              </div>
+              <div class="bar"><span style="--val: 95%"></span></div>
+            </div>
+            <div class="skill reveal">
+              <div class="skill-head">
+                <span>CSS</span><span>Advanced</span>
+              </div>
+              <div class="bar"><span style="--val: 90%"></span></div>
+            </div>
+            <div class="skill reveal">
+              <div class="skill-head">
+                <span>JavaScript</span><span>Advanced</span>
+              </div>
+              <div class="bar"><span style="--val: 85%"></span></div>
+            </div>
+            <div class="skill reveal">
+              <div class="skill-head">
+                <span>TypeScript</span><span>Intermediate</span>
+              </div>
+              <div class="bar"><span style="--val: 70%"></span></div>
+            </div>
+            <div class="skill reveal">
+              <div class="skill-head">
+                <span>Accessibility</span><span>Advanced</span>
+              </div>
+              <div class="bar"><span style="--val: 90%"></span></div>
+            </div>
+            <div class="skill reveal">
+              <div class="skill-head">
+                <span>Performance</span><span>Advanced</span>
+              </div>
+              <div class="bar"><span style="--val: 88%"></span></div>
+            </div>
+          </div>
+          <div class="chips">
+            <span class="chip">React</span>
+            <span class="chip">Vue</span>
+            <span class="chip">Svelte</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">REST</span>
+            <span class="chip">GraphQL</span>
+            <span class="chip">Tailwind</span>
+            <span class="chip">Sass</span>
+            <span class="chip">Git</span>
+            <span class="chip">CI/CD</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="center">Projects</h2>
+          <div class="projects-grid">
+            <!-- Project card -->
+            <article class="card project reveal">
+              <figure class="project-media" aria-hidden="true">
+                <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#8b5cf6" />
+                      <stop offset="100%" stop-color="#06b6d4" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="640" height="360" fill="url(#g1)" />
+                  <circle cx="520" cy="90" r="60" fill="#fff3" />
+                  <rect
+                    x="40"
+                    y="260"
+                    width="280"
+                    height="24"
+                    rx="12"
+                    fill="#fff6"
+                  />
+                </svg>
+              </figure>
+              <div class="project-body">
+                <h3>Portfolio Website</h3>
+                <p>
+                  A modern, responsive portfolio template with light/dark mode
+                  and smooth interactions. Built with semantic HTML, modern CSS,
+                  and vanilla JS.
+                </p>
+                <div class="tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <div class="actions">
+                  <a class="btn sm" href="#">Live Demo</a>
+                  <a class="btn sm ghost" href="#">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project reveal">
+              <figure class="project-media" aria-hidden="true">
+                <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#22c55e" />
+                      <stop offset="100%" stop-color="#0ea5e9" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="640" height="360" fill="url(#g2)" />
+                  <rect
+                    x="100"
+                    y="90"
+                    width="440"
+                    height="180"
+                    rx="12"
+                    fill="#fff3"
+                  />
+                </svg>
+              </figure>
+              <div class="project-body">
+                <h3>Dashboard UI</h3>
+                <p>
+                  Accessible dashboard UI with cards, charts placeholders, and
+                  responsive layout utilities.
+                </p>
+                <div class="tags">
+                  <span>CSS Grid</span><span>ARIA</span><span>Vanilla JS</span>
+                </div>
+                <div class="actions">
+                  <a class="btn sm" href="#">Live Demo</a>
+                  <a class="btn sm ghost" href="#">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project reveal">
+              <figure class="project-media" aria-hidden="true">
+                <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <linearGradient id="g3" x1="0" y1="1" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#f97316" />
+                      <stop offset="100%" stop-color="#ef4444" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="640" height="360" fill="url(#g3)" />
+                  <circle cx="120" cy="180" r="80" fill="#fff3" />
+                </svg>
+              </figure>
+              <div class="project-body">
+                <h3>Landing Page</h3>
+                <p>
+                  High-converting landing page with sticky nav, smooth scroll,
+                  and CTA sections.
+                </p>
+                <div class="tags">
+                  <span>SEO</span><span>Animations</span><span>Responsive</span>
+                </div>
+                <div class="actions">
+                  <a class="btn sm" href="#">Live Demo</a>
+                  <a class="btn sm ghost" href="#">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project reveal">
+              <figure class="project-media" aria-hidden="true">
+                <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <linearGradient id="g4" x1="1" y1="1" x2="0" y2="0">
+                      <stop offset="0%" stop-color="#a855f7" />
+                      <stop offset="100%" stop-color="#22d3ee" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="640" height="360" fill="url(#g4)" />
+                  <rect
+                    x="220"
+                    y="70"
+                    width="200"
+                    height="220"
+                    rx="16"
+                    fill="#fff2"
+                  />
+                </svg>
+              </figure>
+              <div class="project-body">
+                <h3>E-commerce UI</h3>
+                <p>
+                  Product grid, filters, and cart UI components with keyboard
+                  navigation and focus styles.
+                </p>
+                <div class="tags">
+                  <span>ARIA</span><span>Keyboard UX</span><span>CSS</span>
+                </div>
+                <div class="actions">
+                  <a class="btn sm" href="#">Live Demo</a>
+                  <a class="btn sm ghost" href="#">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project reveal">
+              <figure class="project-media" aria-hidden="true">
+                <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#06b6d4" />
+                      <stop offset="100%" stop-color="#14b8a6" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="640" height="360" fill="url(#g5)" />
+                  <rect
+                    x="60"
+                    y="60"
+                    width="520"
+                    height="240"
+                    rx="18"
+                    fill="#fff1"
+                  />
+                </svg>
+              </figure>
+              <div class="project-body">
+                <h3>Component Library</h3>
+                <p>
+                  Reusable, accessible UI components styled with CSS variables
+                  and utility classes.
+                </p>
+                <div class="tags">
+                  <span>Design System</span><span>CSS Vars</span
+                  ><span>A11y</span>
+                </div>
+                <div class="actions">
+                  <a class="btn sm" href="#">Live Demo</a>
+                  <a class="btn sm ghost" href="#">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project reveal">
+              <figure class="project-media" aria-hidden="true">
+                <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <linearGradient id="g6" x1="0" y1="1" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#f43f5e" />
+                      <stop offset="100%" stop-color="#8b5cf6" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="640" height="360" fill="url(#g6)" />
+                  <polygon points="80,300 560,300 320,60" fill="#fff2" />
+                </svg>
+              </figure>
+              <div class="project-body">
+                <h3>Blog Template</h3>
+                <p>
+                  Clean blog layout with article cards, code highlighting
+                  placeholders, and reading progress.
+                </p>
+                <div class="tags">
+                  <span>Semantics</span><span>Typography</span><span>JS</span>
+                </div>
+                <div class="actions">
+                  <a class="btn sm" href="#">Live Demo</a>
+                  <a class="btn sm ghost" href="#">Source</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section alt">
+        <div class="container">
+          <h2 class="center">Experience</h2>
+          <ol class="timeline">
+            <li class="reveal">
+              <div class="time">2023 — Present</div>
+              <div class="content">
+                <h3>Senior Frontend Developer — Acme Corp</h3>
+                <p>
+                  Leading UI development for enterprise dashboards, improving
+                  performance by 35% and accessibility compliance to WCAG 2.1
+                  AA.
+                </p>
+                <div class="tags">
+                  <span>React</span><span>Performance</span><span>A11y</span>
+                </div>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="time">2021 — 2023</div>
+              <div class="content">
+                <h3>Frontend Engineer — Pixel Studio</h3>
+                <p>
+                  Built marketing sites and design systems for startups,
+                  collaborating with designers and backend teams.
+                </p>
+                <div class="tags">
+                  <span>Design Systems</span><span>CSS</span><span>JS</span>
+                </div>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="time">2019 — 2021</div>
+              <div class="content">
+                <h3>Freelance Developer</h3>
+                <p>
+                  Delivered responsive websites and prototypes for clients
+                  across different industries.
+                </p>
+                <div class="tags">
+                  <span>Web</span><span>Freelance</span><span>UI</span>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container grid-2">
+          <div class="reveal">
+            <h2>Contact</h2>
+            <p>
+              Have a project in mind or just want to say hi? Send a message and
+              I'll get back to you soon. This form is a demo — it won't actually
+              send an email.
+            </p>
+            <ul class="checks">
+              <li>Response within 1–2 business days</li>
+              <li>Available for remote work</li>
+              <li>Open to collaborations</li>
+            </ul>
+          </div>
+          <form class="card form reveal" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Jane Smith"
+                required
+              />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="jane@example.com"
+                required
+              />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <button class="btn primary block" type="submit">
+              Send Message
+            </button>
+            <p class="muted center">
+              This is a demo form. No emails will be sent.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> Ahmed Loubiri. All rights reserved. •
+          <a href="#top">Back to top</a>
+        </p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub (placeholder)" title="GitHub">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.21.09 1.84 1.25 1.84 1.25 1.07 1.84 2.82 1.31 3.51 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.48-1.34-5.48-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.64.24 2.86.12 3.16.77.84 1.24 1.9 1.24 3.22 0 4.62-2.81 5.65-5.49 5.95.43.37.81 1.09.81 2.2v3.26c0 .32.21.69.83.57A12 12 0 0 0 12 .5z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn (placeholder)" title="LinkedIn">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.64h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.09V21h-4v-5.27c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.38-2.03 2.8V21H9z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="toast" role="status" aria-live="polite" class="toast" hidden>
+      <span id="toast-text">Message sent!</span>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
