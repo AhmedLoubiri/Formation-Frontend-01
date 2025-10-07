@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Simple beginner portfolio using HTML, CSS, and JavaScript." />
+  <title>Beginner Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <nav class="nav container">
+        <a class="brand" href="#home">
+          <img src="assets/favicon.svg" alt="Logo" class="logo" />
+          <span>My Portfolio</span>
+        </a>
+       
+        <ul class="nav__list" id="nav-list">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <!-- Hero Section -->
+      <section class="section hero container" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <div class="hero__title">
+            <img src="assets/profile-icon.svg" alt="Profile icon" class="hero__icon" />
+            <h1 id="hero-title">Hi, I'm Ahmed</h1>
+          </div>
+          <p class="lead">I’m learning frontend and building simple web pages.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn btn--outline" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section container" id="about" aria-labelledby="about-title">
+        <h2 class="section__title" id="about-title">About</h2>
+        <p>
+          I'm learning HTML, CSS, and JavaScript. This portfolio is a beginner-friendly
+          template you can customize. It focuses on accessibility, responsiveness, and clean code.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 class="section__title" id="skills-title">Skills</h2>
+          <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section container" id="projects" aria-labelledby="projects-title">
+        <h2 class="section__title" id="projects-title">Projects</h2>
+        <div class="grid projects">
+          <article class="card">
+            <img src="assets/project.svg" alt="Project placeholder" class="card__image" />
+            <div class="card__body">
+              <h3 class="card__title">Project One</h3>
+              <p class="card__text">A simple landing page with responsive layout.</p>
+              <div class="card__actions">
+                <a class="btn btn--sm" href="#">Live</a>
+                <a class="btn btn--sm btn--outline" href="#">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/project.svg" alt="Project placeholder" class="card__image" />
+            <div class="card__body">
+              <h3 class="card__title">Project Two</h3>
+              <p class="card__text">A small JS app that counts clicks.</p>
+              <div class="card__actions">
+                <a class="btn btn--sm" href="#" >Live</a>
+                <a class="btn btn--sm btn--outline" href="#" >Code</a>
+              </div>
+            </div>
+          </article>
+          
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section section--alt" id="contact" >
+        <div class="container">
+          <h2 class="section__title" id="contact-title">Contact</h2>
+          <form class="contact" >
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Hello" required />
+            </div>
+            <div class="field">
+              <label for="body">Message</label>
+              <textarea id="body" name="body" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Email</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+  <p>© <span id="year"></span> My Portfolio.</p>
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+  <script src="script.js" ></script>
+  </body>
+  </html>
